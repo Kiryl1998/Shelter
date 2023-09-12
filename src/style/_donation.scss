@@ -1,0 +1,108 @@
+.donation {
+  padding: 80px 0px 100px 0px;
+  background-color: #f6f6f6;
+  .wrapper_row_donation {
+    max-width: 915px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    .wrapper_img {
+      max-width: 505px;
+      .img_donation {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .content_donation {
+      max-width: 380px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+        @media screen and (max-width: 320px) {
+          margin-bottom: 42px;
+        }
+      }
+      .title_donation {
+        max-width: 300px;
+        color: #545454;
+        @include adaptiv-font(35, 25);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 45.5px */
+        letter-spacing: 2.1px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 426px) {
+          margin: 0 auto 20px;
+          max-width: 239px;
+          text-align: center;
+        }
+      }
+      .subtitle_donation {
+        display: block;
+        color: #545454;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 24px */
+        margin-bottom: 20px;
+        @media screen and (max-width: 426px) {
+          text-align: center;
+          margin: 0 -10px 20px;
+        }
+      }
+      .credit_card_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 349px;
+        background-color: #f1cdb3;
+        border-radius: 9px;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 426px) {
+          margin: 0px auto 20px;
+        }
+        .img_credit_card {
+          .img_card {
+          }
+        }
+        .card_content {
+          color: #545454;
+          @include adaptiv-font(20, 15);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 115%; /* 23px */
+          letter-spacing: 1.2px;
+        }
+      }
+      .description_donation {
+        @media screen and (max-width: 426px) {
+          max-width: 320px;
+          @media screen and (max-width: 320px) {
+            max-width: 280px;
+          }
+        }
+        .description_item {
+          color: #b2b2b2;
+          font-family: Arial;
+          font-size: 12px;
+          font-style: italic;
+          font-weight: 400;
+          line-height: 18px; /* 150% */
+          text-align: justify;
+          @media screen and (max-width:768px) {
+            text-align: left;
+            @media screen and (max-width:426px) {
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}

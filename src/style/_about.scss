@@ -1,0 +1,61 @@
+.about {
+  padding: 80px 0px 100px 0px;
+  background: #fff;
+  .wrapper_about_row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    .img_cat_dog {
+      max-width: 300px;
+      .img_cat_dog_size {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .about_content_size {
+      max-width: 430px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 80px;
+      }
+      .about_title_size {
+        max-width: 370px;
+        color: #545454;
+        @include adaptiv-font(35, 25);
+        font-weight: 400;
+        line-height: 130%; /* 45.5px */
+        letter-spacing: 2.1px;
+        margin-bottom: 25px;
+        @media screen and (max-width: 470px) {
+          text-align: center;
+          margin: 0 auto 25px;
+          @media screen and (max-width: 320px) {
+            max-width: 300px;
+          }
+        }
+      }
+      .subtitle_about {
+        margin-bottom: 25px;
+        @media screen and (max-width:320px) {
+          max-width: 270px;
+          margin: 0 auto 25px;
+        }
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        .subtitle__item_about {
+          color: #4c4c4c;
+          font-family: Arial;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 24px */
+        }
+      }
+    }
+  }
+}

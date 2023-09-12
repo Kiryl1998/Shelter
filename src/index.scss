@@ -1,0 +1,22 @@
+@import 'style/variables';
+@import 'style/header';
+@import 'style/about';
+
+@import 'style/help';
+@import 'style/donation';
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-family: Georgia, Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: auto;
+}
